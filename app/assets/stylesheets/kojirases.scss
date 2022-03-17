@@ -2,8 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+
+.container{
+  width: 100%;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: beige;
+  height: 100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: grey;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+h4{
+  color:maroon;
+}
+
+.img-main{
+  text-align: center;
+}
 .button-wrapper {
   text-align: center;
   margin-top: 5ch;
-
+  font-size: 25px;
+  margin-bottom: 5ch;
 }

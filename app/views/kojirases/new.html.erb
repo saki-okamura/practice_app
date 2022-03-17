@@ -1,22 +1,25 @@
-<h1>拗らせ診断</h1>
+<h2>当てはまる方にチェック</h2>
 <%= form_with model: @kojirase, class: 'form-control', local: true do |f| %>
   <div class="container-sindan">
-  <h5>よく言ってしまう言葉は・・</h5>
+  <h5>Q1.よく言ってしまう言葉は・・</h5>
     <div class="col-6">
       <p><%= f.check_box :question, {multiple: true}, "1", nil %>ありがとう</p>
       <p><%= f.check_box :question, {multiple: true}, "2", nil %>すみません</p>
     </div>
-  <h5>休日は・・</h5>
+    <br>
+  <h5>Q2.休日は・・</h5>
     <div class="col-6">
       <p><%= f.check_box :question, {multiple: true}, "1", nil %>友達と遊ぶ</p>
       <p><%= f.check_box :question, {multiple: true}, "2", nil %>家でゴロゴロ</p>
     </div>
-  <h5>人に甘えるのは・・</h5>
+    <br>
+  <h5>Q3.人に甘えるのは・・</h5>
     <div class="col-6">
       <p><%= f.check_box :question, {multiple: true}, "1", nil %>ついつい甘えてしまう</p>
       <p><%= f.check_box :question, {multiple: true}, "2", nil %>恥ずかしい！絶対無理</p>
     </div>
-  <h5>男性へのアプローチは・・</h5>
+    <br>
+  <h5>Q4.男性へのアプローチは・・</h5>
     <div class="col-6">
       <p><%= f.check_box :question, {multiple: true}, "1", nil %>気になる人がいればできる！</p>
       <p><%= f.check_box :question, {multiple: true}, "2", nil %>私なんて無理。めんどくさい。</p>

@@ -12,7 +12,7 @@ class KojirasesController < ApplicationController
   def create
     @kojirase = Kojirase.new(kojirase_params)
     @kojirase.question = params[:kojirase][:question].join("")
-    if @kojirase.save
+    if @kojirase.save!
       flash[:success] = '診断が完了しました'
       redirect_to kojirase_path(@kojirase)
     else

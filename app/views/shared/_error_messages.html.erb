@@ -1,0 +1,12 @@
+<% if object.errors.any? %>
+  <div id="error_messages" class="alert alert-danger">
+    <ul class="mb-0">   <%#エラーメッセージの下の余白がなくなる%>
+      <% object.errors.full_messages. each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%# f.objectとは？ formのブロック変数に対して使用する事でブロック内でモデルオブジェクトを呼び出す事が出来る(hogeでf.hogeでも名前はなんでも良い)%>
+<%#id: error_messagesとつけることによって、jsで使えるようになる%>
